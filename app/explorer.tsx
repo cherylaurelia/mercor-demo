@@ -54,7 +54,7 @@ export function Explorer({ index }: { index: IndexRow[] }) {
           <thead>
             <tr className="border-b border-neutral-200">
               <th scope="col" className="py-2 pr-4 font-medium">Task</th>
-              <th scope="col" className="py-2 pr-4 font-medium">Type</th>
+              <th scope="col" className="hidden py-2 pr-4 font-medium sm:table-cell">Type</th>
               <th scope="col" className="py-2 pr-4 font-medium">Run 1</th>
               <th scope="col" className="py-2 font-medium">Run 2</th>
             </tr>
@@ -63,7 +63,7 @@ export function Explorer({ index }: { index: IndexRow[] }) {
             {index.map((row) => (
               <tr key={row.id} className={`border-b border-neutral-100 ${task?.id === row.id ? "bg-neutral-50" : ""}`}>
                 <td className="py-2 pr-4 whitespace-nowrap">Task {row.id}</td>
-                <td className="py-2 pr-4 whitespace-nowrap text-neutral-600">{row.category}</td>
+                <td className="hidden py-2 pr-4 whitespace-nowrap text-neutral-600 sm:table-cell">{row.category}</td>
                 {row.runs.map((r) => (
                   <td key={r.rep} className="py-1 pr-4">
                     <button
