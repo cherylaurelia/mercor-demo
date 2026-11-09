@@ -1,0 +1,301 @@
+{
+ "summary": {
+  "golden": {
+   "haiku": {
+    "off": [
+     89,
+     89
+    ],
+    "on": [
+     89,
+     89
+    ]
+   },
+   "sonnet": {
+    "off": [
+     89,
+     89
+    ],
+    "on": [
+     89,
+     89
+    ]
+   }
+  },
+  "hedge": {
+   "haiku": {
+    "off": [
+     35,
+     69
+    ],
+    "on": [
+     8,
+     69
+    ],
+    "pinned": [
+     35,
+     69
+    ]
+   },
+   "sonnet": {
+    "off": [
+     58,
+     69
+    ],
+    "on": [
+     6,
+     69
+    ],
+    "pinned": [
+     56,
+     68
+    ]
+   }
+  },
+  "hedgeAll": {
+   "haiku": {
+    "off": 0.578,
+    "on": 0.172
+   },
+   "sonnet": {
+    "off": 0.758,
+    "on": 0.185
+   }
+  },
+  "blank": [
+   0,
+   89
+  ],
+  "swap": [
+   0,
+   64
+  ],
+  "wrongDigit": [
+   0,
+   55
+  ],
+  "sonnet": {
+   "golden": [
+    89,
+    89
+   ],
+   "blank": [
+    0,
+    89
+   ],
+   "wrongDigit": [
+    0,
+    55
+   ],
+   "swap": [
+    3,
+    64
+   ]
+  },
+  "haiku": {
+   "golden": [
+    89,
+    89
+   ],
+   "blank": [
+    0,
+    89
+   ],
+   "wrongDigit": [
+    0,
+    55
+   ],
+   "swap": [
+    0,
+    64
+   ]
+  },
+  "gptoss": {
+   "pairs": 12,
+   "off": 12,
+   "on": 12
+  }
+ },
+ "index": [
+  {
+   "id": "4",
+   "category": "Data Entry",
+   "runs": [
+    {
+     "rep": 1,
+     "met": 1,
+     "total": 2
+    },
+    {
+     "rep": 2,
+     "met": 1,
+     "total": 2
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "category": "Reconciliation",
+   "runs": [
+    {
+     "rep": 1,
+     "met": 3,
+     "total": 4
+    },
+    {
+     "rep": 2,
+     "met": 4,
+     "total": 4
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "category": "Schedules & Accruals",
+   "runs": [
+    {
+     "rep": 1,
+     "met": 10,
+     "total": 12
+    },
+    {
+     "rep": 2,
+     "met": 6,
+     "total": 12
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "category": "Schedules & Accruals",
+   "runs": [
+    {
+     "rep": 1,
+     "met": 2,
+     "total": 5
+    },
+    {
+     "rep": 2,
+     "met": 5,
+     "total": 5
+    }
+   ]
+  },
+  {
+   "id": "13",
+   "category": "Reconciliation",
+   "runs": [
+    {
+     "rep": 1,
+     "met": 11,
+     "total": 12
+    },
+    {
+     "rep": 2,
+     "met": 10,
+     "total": 12
+    }
+   ]
+  },
+  {
+   "id": "14",
+   "category": "Reconciliation",
+   "runs": [
+    {
+     "rep": 1,
+     "met": 20,
+     "total": 24
+    },
+    {
+     "rep": 2,
+     "met": 19,
+     "total": 24
+    }
+   ]
+  },
+  {
+   "id": "17",
+   "category": "Reconciliation",
+   "runs": [
+    {
+     "rep": 1,
+     "met": 1,
+     "total": 6
+    },
+    {
+     "rep": 2,
+     "met": 6,
+     "total": 6
+    }
+   ]
+  },
+  {
+   "id": "23",
+   "category": "Variance Analysis",
+   "runs": [
+    {
+     "rep": 1,
+     "met": 14,
+     "total": 16
+    },
+    {
+     "rep": 2,
+     "met": 11,
+     "total": 16
+    }
+   ]
+  },
+  {
+   "id": "26",
+   "category": "Schedules & Accruals",
+   "runs": [
+    {
+     "rep": 1,
+     "met": 0,
+     "total": 3
+    },
+    {
+     "rep": 2,
+     "met": 0,
+     "total": 3
+    }
+   ]
+  },
+  {
+   "id": "30",
+   "category": "Variance Analysis",
+   "runs": [
+    {
+     "rep": 1,
+     "met": 3,
+     "total": 5
+    },
+    {
+     "rep": 2,
+     "met": 3,
+     "total": 5
+    }
+   ]
+  }
+ ],
+ "hedgeExample": {
+  "off": {
+   "met": true,
+   "why": "Evidence: The agent's final response lists Current as '72.80% (or possibly 75.80%, depending on treatment)'. No file artifacts exist.\n\nAssessment: The criterion requires stating the Current bucket exposure as 72.80%. The agent does state 72.80%, but hedges with an alternative of 75.80%. The hedge introduces ambiguity, though 72.80% is presented as the primary answer and the alternative is parenthetical. The primary value matches the accepted value, so the criterion is largely met, though the hedging slightly weakens it. I judge the primary stated value as the answer."
+  },
+  "on": {
+   "met": false,
+   "why": "Evidence: The agent's text response lists Current as '72.80% (or possibly 75.80%, depending on treatment)'. No artifacts exist.\n\nAssessment: The criterion requires stating the Current bucket exposure is 72.80%. The agent includes 72.80% but hedges with an alternative of 75.80%. The task asked for a single answer per bucket, not multiple scenarios, so under the scattergunning guard, hedging between candidates fails even though the correct value appears among them."
+  }
+ },
+ "realHedge": {
+  "off": {
+   "met": true,
+   "why": "**Evidence:** The agent's final text response (no file artifacts were provided) contains three versions of the aging table. Section A, labelled as the primary answer, shows 1\u201330 at $211,821.83 (12.25%). Section B, the Invoice Detail tab as labelled, also shows 12.25%. Section C, the invoice detail re-bucketed on days past due, has the row \"1\u201330 | $187,562.09 | 10.85%\". The agent explains that INV-2024-0125 (59 days past due) and several invoices dated 10/3\u201311/13 belong in 31\u201360 rather than 1\u201330, which moves $24,259.74 out of 1\u201330.\n\n**Assessment:** Criterion requirement: the response must state that the AR exposure for the 1\u201330 aging bucket is 10.85%. The agent does state this figure, in the re-bucketed table in Section C, with the correct bucket label and the two-decimal format the task asked for. The agent does not adopt 10.85% as its primary answer; its headline answer for 1\u201330 is 12.25%, and it presents the 10.85% figure as an alternative reached by re-aging. That hedging weakens the answer, but the criterion asks only whether the 10.85% figure is stated for the 1\u201330 bucket, and it is. I therefore judge the criterion met, with the caveat that the response is internally inconsistent about which figure is authoritative."
+  },
+  "on": {
+   "met": false,
+   "why": "**Evidence:** The response states the 1\u201330 bucket at 10.85% only in section C, the invoice detail re-bucketed on days past due: \"1\u201330 | $187,562.09 | 10.85%\". In section A, which the agent calls \"my primary answer\", the 1\u201330 bucket is \"$211,821.83 | 12.25%\". Section B repeats 12.25% for the detail tab's labelled buckets. No file artifacts were produced; the task asked for console output.\n\n**Assessment:** The criterion requires the response to state the 1\u201330 exposure as 10.85%. The figure does appear, but the agent labels its primary answer as 12.25% and presents 10.85% as a separate re-bucketed alternative that departs from the workpaper's labels. The task asked for a single exposure by aging bucket and did not request multiple scenarios, so the scattergunning guard applies. Presenting several candidate bucket values, with the primary one different from the criterion value, is hedging. The criterion is therefore not met."
+  }
+ }
+}
