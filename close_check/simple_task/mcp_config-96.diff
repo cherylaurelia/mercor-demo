@@ -1,0 +1,24 @@
+diff --git a/examples/simple_task/mcp_config.json b/examples/simple_task/mcp_config.json
+index f4a747c..632569c 100644
+--- a/examples/simple_task/mcp_config.json
++++ b/examples/simple_task/mcp_config.json
+@@ -2,14 +2,17 @@
+   "mcpServers": {
+     "filesystem_server": {
+       "transport": "stdio",
+-      "command": "python",
++      "command": "uv",
+       "args": [
++        "run",
++        "python",
+         "main.py"
+       ],
+       "cwd": "/app/mcp_servers/filesystem/mcp_servers/filesystem_server",
+       "env": {
+         "APP_FS_ROOT": "/filesystem",
+-        "SERVER_NAME": "filesystem_server"
++        "SERVER_NAME": "filesystem_server",
++        "MCP_TRANSPORT": "stdio"
+       }
+     }
+   }

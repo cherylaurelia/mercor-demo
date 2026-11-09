@@ -1,0 +1,23 @@
+{
+  "grading_run_id": "gr_0914937f",
+  "grading_run_status": "completed",
+  "verifier_results": [
+    {
+      "verifier_id": "ver_001",
+      "verifier_version": 1,
+      "score": 1.0,
+      "verifier_result_values": {
+        "judge_grade": "pass",
+        "grade_rationale": "Evidence: The agent's final response states \"The gorilla image is at: /animals/xk92m/qz7fw.png\". No file artifacts exist, but the criterion concerns only the reported path.\n\nAssessment: The criterion requires the agent to report the correct path /animals/xk92m/qz7fw.png. The reported path matches exactly. The transcript does not show the images being viewed (tool results were unreadable validator output), so the identification can't be independently verified, but the final answer matches the specified correct path, so the criterion is met.",
+        "evaluated_artifacts": "",
+        "grading_target_unresolved": false
+      },
+      "status": "ok",
+      "message": ""
+    }
+  ],
+  "scoring_results": {
+    "final_score": 1.0,
+    "scoring_method_result_values": {}
+  }
+}

@@ -1,0 +1,22 @@
+diff --git a/examples/simple_task/grading_settings.json b/examples/simple_task/grading_settings.json
+index c7cf04f..f06dd80 100644
+--- a/examples/simple_task/grading_settings.json
++++ b/examples/simple_task/grading_settings.json
+@@ -1,4 +1,4 @@
+ {
+-  "llm_judge_model": "vertex_ai/gemini-2.5-flash",
++  "llm_judge_model": "litellm_proxy/judge-sonnet",
+   "llm_judge_extra_args": null
+ }
+\ No newline at end of file
+diff --git a/examples/simple_task/orchestrator_config.json b/examples/simple_task/orchestrator_config.json
+index 3d2005c..1dc25b9 100644
+--- a/examples/simple_task/orchestrator_config.json
++++ b/examples/simple_task/orchestrator_config.json
+@@ -1,4 +1,4 @@
+ {
+-  "model": "vertex_ai/gemini-3.1-pro-preview",
++  "model": "litellm_proxy/agent-sonnet",
+   "extra_args": {}
+ }
+\ No newline at end of file
